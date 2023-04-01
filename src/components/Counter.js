@@ -4,14 +4,14 @@ import classes from './Counter.module.css';
 
 const Counter = () => {
   const dispatch = useDispatch()
-  const counter = useSelector(state => state.counter)
+  const counter = useSelector(state => state.counter.counter)
 
-  const toggle = useSelector(state => state.showCounter)
+  const toggle = useSelector(state => state.counter.showCounter)
 
   // const toggleCounterHandler = () => {
-  //   dispatch({type: "SHOWCOUNT"})
+  //   dispatch({type:"SHOWCOUNT"})
   // };
-
+ 
   // const increamentHandler = () => {
   //   dispatch({type: "INCREAMENT"})
   // }
