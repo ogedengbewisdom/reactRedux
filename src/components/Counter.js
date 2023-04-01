@@ -8,6 +8,23 @@ const Counter = () => {
 
   const toggle = useSelector(state => state.showCounter)
 
+  // const toggleCounterHandler = () => {
+  //   dispatch({type: "SHOWCOUNT"})
+  // };
+
+  // const increamentHandler = () => {
+  //   dispatch({type: "INCREAMENT"})
+  // }
+
+  // const increaseHandler = () => {
+  //   dispatch({type: "INCREASE", amount: 10})
+  // }
+
+  // const decreamentHandler = () => {
+  //   dispatch({type: "DECREAMENT"})
+  // }
+
+  
   const toggleCounterHandler = () => {
     dispatch(counterActions.toggle())
   };
